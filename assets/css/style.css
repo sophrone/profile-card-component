@@ -124,6 +124,20 @@ p {
 
 @media only screen and (max-width: 1200px) {
     .pattern-top {
+        top: -250px;
+        left: -250px;
+        position: fixed;
+    }
+
+    .pattern-bottom {
+        bottom: -250px;
+        right: -250px;
+        position: fixed;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .pattern-top {
         top: -350px;
         left: -350px;
         position: fixed;
@@ -132,20 +146,6 @@ p {
     .pattern-bottom {
         bottom: -350px;
         right: -350px;
-        position: fixed;
-    }
-}
-
-@media only screen and (max-width: 750px) {
-    .pattern-top {
-        top: -500px;
-        left: -500px;
-        position: fixed;
-    }
-
-    .pattern-bottom {
-        bottom: -500px;
-        right: -500px;
         position: fixed;
     }
 }
