@@ -1,0 +1,151 @@
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%)
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    /*background-image: no-repeat url(./images/bg-pattern-top.svg) -200px -400px,
+        no-repeat url(./images/bg-pattern-bottom.svg) 900px 280px;*/
+    background-color: var(--dark-cyan);
+}
+
+.container {
+    width: 350px;
+    height: 360px;
+    margin: auto 0;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pattern-img {
+    border-radius: 15px 15px 0 0;
+    width: 350px;
+}
+
+.potrait-img {
+    border-radius: 50%;
+    width: 100px;
+    border: 5px solid white;
+    margin-top: -50px;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+}
+
+p {
+    font-weight: 400;
+}
+
+.name {
+    display: flex;
+    margin-top: 10px;
+}
+
+.age {
+    color: var(--dark-grayish-blue);
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+.city {
+    color: var(--dark-grayish-blue);
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 0.1px solid var(--dark-gray);
+}
+
+.card-stats {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.number {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.feature {
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+    font-size: 12px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+.attribution {
+    text-align: left;
+    margin-top: 50px;
+    padding-left: 15px;
+    font-weight: 400;
+}
+
+.attribution>a {
+    color: #fff;
+}
+
+.pattern-top,
+.pattern-bottom {
+    position: absolute;
+    max-width: 800px;
+}
+
+.pattern-top {
+    top: -250px;
+    left: -250px;
+}
+
+.pattern-bottom {
+    bottom: -250px;
+    right: -250px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .pattern-top {
+        top: -350px;
+        left: -350px;
+        position: absolute;
+    }
+
+    .pattern-bottom {
+        bottom: -350px;
+        right: -350px;
+        position: absolute;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .pattern-top {
+        top: -500px;
+        left: -500px;
+        position: absolute;
+    }
+
+    .pattern-bottom {
+        bottom: -500px;
+        right: -500px;
+        position: absolute;
+    }
+}
