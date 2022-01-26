@@ -150,4 +150,16 @@ p {
     }
 }
 
-
+@media (min-width: 375px){
+    .img-top {
+        bottom: 30vh;
+        position: fixed;
+        right: 30vh;
+    }
+    
+    .img-bottom {
+        position: fixed;
+        bottom: -110vh;
+        left: 25vh;
+    } 
+}
