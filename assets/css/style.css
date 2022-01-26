@@ -122,7 +122,7 @@ p {
     right: -250px;
 }
 
-@media only screen and (max-width: 1200px) {
+/*@media only screen and (max-width: 1200px) {
     .pattern-top {
         top: -350px;
         left: -350px;
@@ -143,5 +143,47 @@ p {
     .pattern-bottom {
         bottom: -500px;
         right: -500px;
+    }
+}*/
+
+@media (min-width: 375px){
+    .pattern-top {
+        bottom: 30vh;
+        position: fixed;
+        right: 30vh;
+    }
+    
+    .pattern-bottom {
+        position: fixed;
+        bottom: -110vh;
+        left: 25vh;
+    } 
+}
+
+@media (min-width: 768px){
+    .pattern-top {
+        bottom: 30vh;
+        position: fixed;
+        right: 60vh;
+    }
+    
+    .pattern-bottom {
+        position: fixed;
+        bottom: -110vh;
+        left: 70vh;
+    } 
+}
+
+@media (min-width: 1024px) {
+    .pattern-top {
+        bottom: 30vh;
+        position: fixed;
+        right: 120vh;
+    }
+    
+    .pattern-bottom {
+        position: fixed;
+        bottom: -107vh;
+        left: 100vh;
     }
 }
