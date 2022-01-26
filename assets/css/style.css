@@ -126,13 +126,13 @@ p {
     .pattern-top {
         top: -350px;
         left: -350px;
-        position: absolute;
+        position: fixed;
     }
 
     .pattern-bottom {
         bottom: -350px;
         right: -350px;
-        position: absolute;
+        position: fixed;
     }
 }
 
@@ -140,13 +140,13 @@ p {
     .pattern-top {
         top: -500px;
         left: -500px;
-        position: absolute;
+        position: fixed;
     }
 
     .pattern-bottom {
         bottom: -500px;
         right: -500px;
-        position: absolute;
+        position: fixed;
     }
 }
 
